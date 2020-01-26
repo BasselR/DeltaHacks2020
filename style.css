@@ -29,7 +29,7 @@
     margin: 0px;
 }
 
-.buttonDiv{
+.centerDiv{
     text-align: center; 
 }
 
@@ -130,4 +130,12 @@ p.main_button{
 
 .optionBack{
     position: absolute;
+}
+
+.quoteText{
+    font-size: 40px;
+    width: 50vw;
+    font-family: 'Playfair Display', serif;
+    display: inline-block;
+    margin-top: 2vh;
 }
