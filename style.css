@@ -3,21 +3,53 @@
     font-family:"Trebuchet MS", Helvetica, sans-serif;
     font-size: 128px;
     text-align: center;
-    margin: 10vw 0vw 0vw 0vw;
+    padding: 10vh 10vh 0vh 10vh;
 
+}
+
+.headers{
+    color: rgb(240, 9, 151);
+    font-family:"Trebuchet MS", Helvetica, sans-serif;
+    font-size: 70px;
+    text-align: center;
+    padding: 7vh 7vh 0vh 7vh;
+}
+
+.homeHeader{
+    padding: 10vh;
 }
 
 .slogan{
     color: rgb(119, 119, 119);
     font-size: 26px;
     font-family: 'Inconsolata', monospace;
-    margin: 0vw 0vw 0vw 35vw;
+    text-align: center;
+    padding: 5vh;
 }
 
-.btn1{
-    padding-bottom: 200px;
+.buttonDiv{
+    text-align: center;
+}
+
+.logReg{
+    margin: 10vh;
+    min-width: 10vw;
+}
+
+.entry{
+    margin: 3vh 0vh 0vh 0vh;
+}
+
+.option{
+    min-width: 10vw;
+}
+
+.optionDiv{
+    display: block;
+    margin: 5vh 0vh;
+    text-align: center;
 }
 
 .login{
-    padding: 10vh 30vw;
+    margin: 10vh 30vw 0vh 30vw;
 }

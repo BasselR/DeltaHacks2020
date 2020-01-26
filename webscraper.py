@@ -6,15 +6,21 @@ response = requests.get(url ,timeout = 5)
 content = BeautifulSoup(response.content, "html.parser")
 quoteArr = []
 
-for quote in content.findAll('p', attrs={}):
-    if (str(quote)[0] >= '1' and str(quote)[0] <= '9'):
-        quoteArr.append(quote.text())
-
-
 f = open('output.txt','w')
+for quote in content.findAll('p'):
+    data = str(quote.text)
+    # f.write(data)
+    # f.write("\n")
+    if(data and data[0] >= '1' and data[0] <= '9'):
+        try:
+            f.write(data[data.index('“') : data.index('”')])
+            f.write(data)
+            f.write("\n")
+        except ValueError:
+            continue
 
-for quote in quoteArr:
-    f.write(str(quote))
+
+
 
 f.close()
     
