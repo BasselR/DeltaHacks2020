@@ -16,7 +16,7 @@
 }
 
 .homeHeader{
-    padding: 10vh;
+    padding: 20vh 10vh 0vh 10vh;
 }
 
 .slogan{
@@ -40,7 +40,13 @@
 }
 
 .option{
-    min-width: 10vw;
+    min-width: 30vw;
+}
+
+p.p1{
+    font-size: 30px;
+    text-align: center;
+    padding-top: 15px;
 }
 
 .optionDiv{
