@@ -22,8 +22,12 @@
     <h1 class="title">Flamingo</h1>
     <h2 class="slogan">Get in touch with your emotions :)</h2>
     <div class="buttonDiv">
-        <a class="logReg btn btn-primary" href="register.html" role="button"><p class="main_button">Register</p></a>
-        <a class="logReg btn btn-success" href="login.html" role="button"><p class="main_button">Login</p></a>
+        <form action="/signup" method="POST">
+        <button type="submit" class="logReg btn btn-primary" role="button"><p class="main_button">Sign Up</p></button>
+        </form>
+        <form action="/login" method="POST">
+        <button class="logReg btn btn-success" href="login.html" role="button" style="margin: 0px"><p class="main_button">Login</p></button>
+        </form>
     </div>
     
 </body>
