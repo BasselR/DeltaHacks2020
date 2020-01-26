@@ -1,20 +1,21 @@
 from bs4 import BeautifulSoup
 import requests
+import json
 
 url = 'https://everydaypower.com/mental-health-quotes/'
 response = requests.get(url ,timeout = 5)
 content = BeautifulSoup(response.content, "html.parser")
 quoteArr = []
 
-f = open('output.txt','w')
+data = []
 for quote in content.findAll('p'):
-    data = str(quote.text)
-    if(data and data[0] >= '1' and data[0] <= '9'):
+    current = str(quote.text)
+
+    if(current and current[0] >= '1' and current[0] <= '9'):
         try:
-            f.write(data[data.index('“') : data.index('”')])
-            f.write("\n")
+            data.append(current[current.index('“') : current.index('”')])
         except ValueError:
             continue
-f.close()
-    
 
+with open('quotes.json', 'w', encoding='utf8') as json_file:
+    json.dump(data, json_file, ensure_ascii=False)
