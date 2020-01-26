@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name ="viewport" content ="width=device-width,initial-scale=1.0"
+    >
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>External Help Sources</title>
+    <style>
+        #map{
+            height:400px;
+            width:100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>External Help Sources</h1>
+    <div id="map">
+
+    </div>
+    <script>
+        function initMap(){
+            // map options
+            var options = {
+                zoom:13,
+                center:{lat:43.2557,lng:-79.8711}
+            }
+            // new map
+            var map = new 
+            google.maps.Map(document.getElementById('map'), options);
+
+
+            addMarker({
+                coords:{lat:43.258011,lng:-79.908623},
+                iconImage: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+                content: '<h1>Hamilton Psychological Services (905) 527-5991 </h1>'})
+
+            addMarker({
+                coords:{lat:43.252260,lng:-79.867360},
+                iconImage:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+                content: '<h1>Canadian Mental Health Association (905) 521-0090 </h1>'})
+            
+            addMarker({
+                coords:{lat:43.255710,lng:-79.869730},
+                iconImage:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+                content: '<h1>Youth Wellness Centre (905) 522-1155 ext. 31725</h1>'})
+            addMarker({
+                coords:{lat:43.259330,lng:-79.888050},
+                iconImage:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+                content: '<h1>The Serenity Centre (416) 805-7085</h1>'})
+            addMarker({
+                coords:{lat:43.255340,lng:-79.868340},
+                iconImage:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+                content: '<h1>IntĀc (905) 528-0683</h1>'})
+            
+            addMarker({
+                coords:{lat:43.2609,lng:-79.9192},
+                content: '<h1>You Are Currently Here!</h1>'})
+            function addMarker(props){
+                var marker = new google.maps.Marker({
+                    position:props.coords,
+                    map:map,
+                    icon:props.iconImage,
+                });
+                if(props.content){
+                var infoWindow = new google.maps.InfoWindow({
+                    content:props.content
+                });
+                marker.addListener('click',function(){
+                    infoWindow.open(map,marker);
+                });
+            }
+            }
+
+        }
+    
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFBHhkXuan2stxVNmKYWLPRZ4NbHM9HG8&callback=initMap">
+    </script>
+</body>
+</html>
