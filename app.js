@@ -88,7 +88,7 @@ app.post("/whatgratefulforsubmitted",function(req,res){
 
 
 app.get("/motivquote",function(req,res){
-    var motivequote = random of quotes
+    var motivequote = random of quotes;
     res.render("motivationalquote.ejs",{embeddedquote : motivequote});
 });
 

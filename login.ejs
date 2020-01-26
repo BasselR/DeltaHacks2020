@@ -16,7 +16,7 @@
   <div class="rectangle" id="r5"></div>
   <img id="flamingo" src="flamingo.png" style="width: 13vw;" >
     <h3 class="headers">Login</h3>
-    <form action="connect.php" method="post" class="login">
+    <form action="/login" method="POST" class="login">
         <div class="form-group">
           <label for="exampleInputEmail1">Email address</label>
           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
@@ -25,9 +25,12 @@
           <label for="exampleInputPassword1">Password</label>
           <input type="password" class="form-control" id="exampleInputPassword1" name="password">
         </div>
-        <div class="buttonDiv">
-            <button class="entry btn btn-success" onclick="location.href='home.html'" type="button"><p class="main_button">Login</p></button>
+        <div class="centerDiv">
+          <form action="/login" method="POST">
+            <button class="entry btn btn-success" type="button"><p class="main_button">Login</p></button>
+          </form>
         </div>
+        </form>
       </form>
     <a class="logReg btn btn-warning" href="index.html" role="button"><p class="main_button">Back</p></a>
 </body>

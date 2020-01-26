@@ -13,7 +13,8 @@
     font-family:"Trebuchet MS", Helvetica, sans-serif;
     font-size: 70px;
     text-align: center;
-    padding: 7vh 7vh 0vh 7vh;
+    padding: 6vh 7vh 0vh 7vh;
+    margin: 0px;
 }
 
 .homeHeader{
@@ -28,7 +29,7 @@
     margin: 0px;
 }
 
-.buttonDiv{
+.centerDiv{
     text-align: center; 
 }
 
@@ -120,4 +121,21 @@ p.main_button{
     position: absolute;
     margin-top: 41vh;
     margin-left: -24vw;
+}
+
+#map{
+    height:400px;
+    width:100%;
+}
+
+.optionBack{
+    position: absolute;
+}
+
+.quoteText{
+    font-size: 40px;
+    width: 50vw;
+    font-family: 'Playfair Display', serif;
+    display: inline-block;
+    margin-top: 2vh;
 }
