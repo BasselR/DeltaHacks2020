@@ -20,11 +20,10 @@
     font-size: 26px;
     font-family: 'Inconsolata', monospace;
     text-align: center;
-    padding: 5vh;
 }
 
 .buttonDiv{
-    text-align: center;
+    text-align: center; 
 }
 
 .logReg{
@@ -44,4 +43,52 @@
 
 .login{
     margin: 10vh 30vw 0vh 30vw;
+}
+
+#r1{
+    width: 40px;
+    height: 100vh;
+    margin-left: 92vw; 
+    background: rgb(240, 9, 151);
+    position: absolute;
+}
+#r2{
+    width: 20px;
+    height: 100vh;
+    margin-left: 96vw; 
+    background: rgb(240, 9, 151);
+    position: absolute;
+}
+#r3{
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+    margin-left: 10vw; 
+    margin-top: 6vh; 
+    background: rgb(240, 9, 151);
+    position: absolute;
+}
+#r4{
+    width: 40px;
+    height: 40px;
+    transform: rotate(60deg);
+    margin-left: 18vw;
+    margin-top: 10vh; 
+    background: rgb(240, 9, 151);
+    position: absolute;
+}
+#r5{
+    width: 60px;
+    height: 60px;
+    transform: rotate(10deg);
+    margin-left: 10vw;
+    margin-top: 20vh; 
+    background: rgb(240, 9, 151);
+    position: absolute;
+}
+
+img{
+    position: absolute;
+    margin-top: 59vh;
+    margin-left: 70vw;
 }
