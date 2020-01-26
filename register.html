@@ -16,14 +16,14 @@
   <div class="rectangle" id="r5"></div>
   <img id="flamingo" src="flamingo.png" style="width: 13vw;">
     <h3 class="headers">Register</h3>
-    <form class="login">
+    <form action="connect.php" method="post" class="login">
         <div class="form-group">
           <label for="exampleInputEmail1">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <input type="email" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp">
         </div>
         <div class="form-group">
           <label for="exampleInputPassword1">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1">
+          <input type="password" class="form-control" id="exampleInputPassword1" name="password">
         </div>
         <div class="buttonDiv">
             <button type="submit" class="entry btn btn-primary"><p class="main_button">Register</p></button>
