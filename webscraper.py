@@ -13,7 +13,7 @@ for quote in content.findAll('p'):
 
     if(current and current[0] >= '1' and current[0] <= '9'):
         try:
-            data.append(current[current.index('“') : current.index('”')])
+            data.append(current[current.index('“') : current.index('”')+1])
         except ValueError:
             continue
 
