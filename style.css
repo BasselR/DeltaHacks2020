@@ -1,3 +1,19 @@
-h1{
+.title{
     color: rgb(240, 9, 151);
+    font-family:"Trebuchet MS", Helvetica, sans-serif;
+    font-size: 128px;
+    text-align: center;
+    margin: 10vw 0vw 0vw 0vw;
+
+}
+
+.slogan{
+    color: rgb(119, 119, 119);
+    font-size: 26px;
+    font-family: 'Inconsolata', monospace;
+    margin: 0vw 0vw 0vw 35vw;
+}
+
+.btn1{
+    padding-bottom: 200px;
 }
