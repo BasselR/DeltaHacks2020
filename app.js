@@ -9,16 +9,11 @@ request('http://worldtimeapi.org/api/timezone/Europe/London.txt',function(error,
         var Data = JSON.parse(body);
     }});
 
-
-
-
 var personSchema = new mongoose.Schema({
     email: String,
     password: String,
     entry: Object
 });
-
-
 
 var Person = mongoose.model("Person",personSchema);
 
@@ -45,7 +40,6 @@ app.post("/signup",function(req,res){
     res.redirect("/homepage.ejs");
 });
 
-
 app.post("/login",function(req,res){
     var useremail = req.body.email;
     Person.find({}, function(err,people){
@@ -62,22 +56,18 @@ app.post("/login",function(req,res){
         }
     })});
 
-
 app.get("/homepage",function(req,res){
     res.render("homepage.ejs",{firstname:currentperson.email});
     //so the firstname thing above is basically a variable inputted into that HTML file which ill turn to a ejs file
 });
 
-
 app.get("/howfeeling",function(req,res){
     res.render("feeling.ejs");
 });
 
-
 app.get("/whatgratefulfor",function(req,res){
     res.render("grateful.ejs");
 });
-
 
 app.post("/whatgratefulforsubmitted",function(req,res){
     var feeling = req.body.feeling;
@@ -86,19 +76,14 @@ app.post("/whatgratefulforsubmitted",function(req,res){
     Person.findOneAndUpdate({email:currentperson.email},{entry:currentperson.entry});
 });
 
-
 app.get("/motivquote",function(req,res){
     var motivequote = random of quotes;
     res.render("motivationalquote.ejs",{embeddedquote : motivequote});
 });
 
-
 app.get("/pastgratefuls",function(req,res){
     res.render("pastgratefuls.ejs",{objectfortable: currentperson.entry});
 });
-
-
-
 
 app.listen(3000,function(){
     console.log("serving");
