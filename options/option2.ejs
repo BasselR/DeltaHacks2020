@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quotes</title>
+  
 </head>
 <body>
     <div class="rectangle" id="r1"></div>
@@ -18,18 +19,14 @@
     <div class="rectangle" id="r4"></div>
     <div class="rectangle" id="r5"></div>
     <img id="flamingo" src="../flamingo.png" style="width: 13vw;">
-    <div class="centerDiv1" style="min-height: 20vh;"><p class="quoteText">What are you grateful for?</p></div>
-
-    <div class="centerDiv2">
-    <form action="/whatgratefulfor" method="POST">
-        <div class="ourForm form-group">
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
-        <button class="logReg btn btn-primary" type="submit" role="button" style="margin: 2vh 0vw 2vh 0vw;"><p class="main_button">Submit</p></button>
-    </form>
+    <div class="centerDiv" style="min-height: 56vh;"><p id="quote" class="quoteText">error</p></div>
+    <div class="centerDiv">
+        <button id="newQ" class="logReg btn btn-primary" role="button" style="margin: 2vh 0vw 2vh 0vw;"><p class="main_button">Another One</p></button>
         <form action="/home" method="GET">
-            <button class="logReg btn btn-warning" type="submit" role="button" style="margin-top: 0vh"><p class="main_button">Back</p></button>
+            <button class="logReg btn btn-warning" role="button" type="submit" style="margin-top: 0vh"><p class="main_button">Back</p></button>
         </form>
     </div>
+    <script src="quoteScript.js"></script>
+    
 </body>
 </html>

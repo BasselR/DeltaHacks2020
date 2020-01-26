@@ -15,9 +15,12 @@
     <div class="rectangle" id="r5"></div>
     <img id="flamingo" src="flamingo.png" style="width: 13vw;" >
     <h3 class="headers homeHeader">Welcome to Flamingo!</h3>
-    <form action="/whatgratefulfor" method="POST">
+
+    <form action="/journal" method="GET">
         <div class="optionDiv">
-            <a class="option btn btn-info" href="options/option1.html" role="button"><p class="home_button">Journal Entry</p></a>
+            <form action="/journal" method="GET">
+                <button class="option btn btn-info" type="submit" role="button"><p class="home_button">Journal Entry</p></button>
+            </form>
         </div>
     </form>
     <form action="/quoter" method="GET">
@@ -30,6 +33,8 @@
             <a class="option btn btn-info" href="options/option3.html" role="button" style="margin-bottom: 0px;"><p class="home_button">Find Help</p></a>
         </div>
     </form>
-    <a class="logReg btn btn-danger" href="index.html" role="button" style="margin: 0px 4vw"><p style="font-size:20px; margin: 0px">Logout</p></a>
+    <form action="/" method="GET">
+        <button class="logReg btn btn-danger" role="button" style="margin: 0px 4vw"><p style="font-size:20px; margin: 0px">Logout</p></button>
+    </form>
 </body>
 </html>
