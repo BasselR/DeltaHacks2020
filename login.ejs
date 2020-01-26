@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <title>Register</title>
+    <title>Login</title>
 </head>
 <body>
   <div class="rectangle" id="r1"></div>
@@ -14,19 +14,19 @@
   <div class="rectangle" id="r3"></div>
   <div class="rectangle" id="r4"></div>
   <div class="rectangle" id="r5"></div>
-  <img id="flamingo" src="flamingo.png" style="width: 13vw;">
-    <h3 class="headers">Register</h3>
-    <form action="connect.php" method="post" class="login">
+  <img id="flamingo" src="flamingo.png" style="width: 13vw;" >
+    <h3 class="headers">Login</h3>
+    <form action="/login" method="POST" class="login">
         <div class="form-group">
           <label for="exampleInputEmail1">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp">
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
         </div>
         <div class="form-group">
           <label for="exampleInputPassword1">Password</label>
           <input type="password" class="form-control" id="exampleInputPassword1" name="password">
         </div>
         <div class="buttonDiv">
-            <button type="submit" class="entry btn btn-primary"><p class="main_button">Register</p></button>
+            <button class="entry btn btn-success" onclick="location.href='home.html'" type="button"><p class="main_button">Login</p></button>
         </div>
       </form>
     <a class="logReg btn btn-warning" href="index.html" role="button"><p class="main_button">Back</p></a>
