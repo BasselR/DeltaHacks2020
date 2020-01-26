@@ -33,6 +33,14 @@
     text-align: center; 
 }
 
+.centerDiv1{
+    text-align: center; 
+}
+
+.centerDiv2{
+    text-align: center; 
+}
+
 .logReg{
     margin: 10vh;
     min-width: 20vw;
@@ -138,4 +146,8 @@ p.main_button{
     font-family: 'Playfair Display', serif;
     display: inline-block;
     margin-top: 2vh;
+}
+
+.ourForm{
+    margin: 10vh 50vh;
 }
