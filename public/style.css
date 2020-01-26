@@ -1,0 +1,153 @@
+.title{
+    color: rgb(240, 9, 151);
+    font-family:"Trebuchet MS", Helvetica, sans-serif;
+    font-size: 128px;
+    text-align: center;
+    padding: 10vh 10vh 0vh 10vh;
+    margin: 0px;
+
+}
+
+.headers{
+    color: rgb(240, 9, 151);
+    font-family:"Trebuchet MS", Helvetica, sans-serif;
+    font-size: 70px;
+    text-align: center;
+    padding: 6vh 7vh 0vh 7vh;
+    margin: 0px;
+}
+
+.homeHeader{
+    padding: 20vh 10vh 0vh 10vh;
+}
+
+.slogan{
+    color: rgb(119, 119, 119);
+    font-size: 26px;
+    font-family: 'Inconsolata', monospace;
+    text-align: center;
+    margin: 0px;
+}
+
+.centerDiv{
+    text-align: center; 
+}
+
+.centerDiv1{
+    text-align: center; 
+}
+
+.centerDiv2{
+    text-align: center; 
+}
+
+.logReg{
+    margin: 10vh;
+    min-width: 20vw;
+}
+
+.entry{
+    margin: 3vh 0vh 0vh 0vh;
+    min-width: 20vw;
+}
+
+.option{
+    min-width: 30vw;
+}
+
+p.home_button{
+    font-size: 30px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+p.main_button{
+    font-size: 25px;
+    text-align: center;
+    margin: 5px;
+}
+
+.optionDiv{
+    display: block;
+    margin: 5vh 0vh;
+    text-align: center;
+}
+
+.login{
+    margin: 10vh 30vw 0vh 30vw;
+}
+
+#r1{
+    width: 3vw;
+    height: 100vh;
+    margin-left: 91vw; 
+    background: rgb(240, 9, 151);
+    position: absolute;
+}
+#r2{
+    width: 1vw;
+    height: 100vh;
+    margin-left: 96vw; 
+    background: rgb(240, 9, 151);
+    position: absolute;
+}
+#r3{
+    width: 2vw;
+    height: 2vw;
+    transform: rotate(45deg);
+    margin-left: 10vw; 
+    margin-top: 6vh; 
+    background: rgb(240, 9, 151);
+    position: absolute;
+}
+#r4{
+    width: 3vw;
+    height: 3vw;
+    transform: rotate(60deg);
+    margin-left: 18vw;
+    margin-top: 10vh; 
+    background: rgb(240, 9, 151);
+    position: absolute;
+}
+#r5{
+    width: 4vw;
+    height: 4vw;
+    transform: rotate(10deg);
+    margin-left: 10vw;
+    margin-top: 20vh; 
+    background: rgb(240, 9, 151);
+    position: absolute;
+}
+
+#flamingo{
+    position: absolute;
+    margin-top: 59vh;
+    margin-left: 70vw;
+}
+
+#sun{
+    position: absolute;
+    margin-top: 41vh;
+    margin-left: -24vw;
+}
+
+#map{
+    height:400px;
+    width:100%;
+}
+
+.optionBack{
+    position: absolute;
+}
+
+.quoteText{
+    font-size: 40px;
+    width: 50vw;
+    font-family: 'Playfair Display', serif;
+    display: inline-block;
+    margin-top: 2vh;
+}
+
+.ourForm{
+    margin: 10vh 50vh;
+}
