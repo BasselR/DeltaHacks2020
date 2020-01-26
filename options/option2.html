@@ -13,8 +13,6 @@
   
 </head>
 <body>
-    <script src="jquery.min.js"></script>
-    <script src="quoteScript.js"></script>
     <div class="rectangle" id="r1"></div>
     <div class="rectangle" id="r2"></div>
     <div class="rectangle" id="r3"></div>
@@ -23,13 +21,12 @@
     <img id="flamingo" src="../flamingo.png" style="width: 13vw;">
     <div class="centerDiv" style="min-height: 56vh;"><p id="quote" class="quoteText">error</p></div>
     <div class="centerDiv">
-        <form action="/regpage" method="GET">
-            <button class="logReg btn btn-primary" role="button" style="margin: 2vh 0vw 2vh 0vw;"><p class="main_button">Another One</p></button>
-        </form>
+        <button id="newQ" class="logReg btn btn-primary" role="button" style="margin: 2vh 0vw 2vh 0vw;"><p class="main_button">Another One</p></button>
         <form action="/logpage" method="GET">
             <button class="logReg btn btn-warning" role="button" style="margin-top: 0vh"><p class="main_button">Back</p></button>
         </form>
     </div>
+    <script src="quoteScript.js"></script>
     
 </body>
 </html>
