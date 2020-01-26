@@ -4,6 +4,7 @@
     font-size: 128px;
     text-align: center;
     padding: 10vh 10vh 0vh 10vh;
+    margin: 0px;
 
 }
 
@@ -24,6 +25,7 @@
     font-size: 26px;
     font-family: 'Inconsolata', monospace;
     text-align: center;
+    margin: 0px;
 }
 
 .buttonDiv{
@@ -32,21 +34,28 @@
 
 .logReg{
     margin: 10vh;
-    min-width: 10vw;
+    min-width: 20vw;
 }
 
 .entry{
     margin: 3vh 0vh 0vh 0vh;
+    min-width: 20vw;
 }
 
 .option{
     min-width: 30vw;
 }
 
-p.p1{
+p.home_button{
     font-size: 30px;
     text-align: center;
     padding-top: 15px;
+}
+
+p.main_button{
+    font-size: 25px;
+    text-align: center;
+    margin: 5px;
 }
 
 .optionDiv{
@@ -101,8 +110,14 @@ p.p1{
     position: absolute;
 }
 
-img{
+#flamingo{
     position: absolute;
     margin-top: 59vh;
     margin-left: 70vw;
+}
+
+#sun{
+    position: absolute;
+    margin-top: 41vh;
+    margin-left: -24vw;
 }
