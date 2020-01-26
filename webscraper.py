@@ -6,7 +6,7 @@ response = requests.get(url ,timeout = 5)
 content = BeautifulSoup(response.content, "html.parser")
 quoteArr = []
 
-f = open('output4.txt','w')
+f = open('output.txt','w')
 for quote in content.findAll('p'):
     data = str(quote.text)
     # f.write(data)
