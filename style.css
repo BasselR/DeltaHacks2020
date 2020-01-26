@@ -15,6 +15,10 @@
     padding: 7vh 7vh 0vh 7vh;
 }
 
+.homeHeader{
+    padding: 10vh;
+}
+
 .slogan{
     color: rgb(119, 119, 119);
     font-size: 26px;
@@ -37,9 +41,13 @@
 }
 
 .option{
+    min-width: 10vw;
+}
+
+.optionDiv{
     display: block;
-    text-align: center;
     margin: 5vh 0vh;
+    text-align: center;
 }
 
 .login{
