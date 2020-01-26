@@ -54,22 +54,22 @@
 }
 
 #r1{
-    width: 40px;
+    width: 3vw;
     height: 100vh;
-    margin-left: 92vw; 
+    margin-left: 91vw; 
     background: rgb(240, 9, 151);
     position: absolute;
 }
 #r2{
-    width: 20px;
+    width: 1vw;
     height: 100vh;
     margin-left: 96vw; 
     background: rgb(240, 9, 151);
     position: absolute;
 }
 #r3{
-    width: 20px;
-    height: 20px;
+    width: 2vw;
+    height: 2vw;
     transform: rotate(45deg);
     margin-left: 10vw; 
     margin-top: 6vh; 
@@ -77,8 +77,8 @@
     position: absolute;
 }
 #r4{
-    width: 40px;
-    height: 40px;
+    width: 3vw;
+    height: 3vw;
     transform: rotate(60deg);
     margin-left: 18vw;
     margin-top: 10vh; 
@@ -86,8 +86,8 @@
     position: absolute;
 }
 #r5{
-    width: 60px;
-    height: 60px;
+    width: 4vw;
+    height: 4vw;
     transform: rotate(10deg);
     margin-left: 10vw;
     margin-top: 20vh; 
